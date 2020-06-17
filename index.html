@@ -9,6 +9,8 @@
              background-color: #A2D6FF}
 
         p { font-family: verdana; }
+        p.countdown { font-family: verdana;
+                      display: block;}
     </style>
 </head>
 <body>
@@ -18,8 +20,6 @@
     <p align=center><a target="_blank" href="https://www.linkedin.com/in/elizabeth-r-0a1655135/">LinkedIn</a></p>
 
 </div>
-
-
 
 
 <button class="accordion">Experience</button>
@@ -227,9 +227,69 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
 </script>
 <!--<div>-->
 <!--    <p>My mom is awesome!</p>-->
 <!--</div>-->
+
+<button id="countdown">Show Countdown
+</button>
+<br>
+<p class="countdown" id="countdownDisplay"></p>
+<!--<br>-->
+
+<script>
+
+    document.getElementById("countdown").addEventListener("click", countdownTimer);
+    document.getElementById("countdown").addEventListener("click", setTimerInterval);
+    document.getElementById("countdown").addEventListener("click", showOrHide);
+
+    function countdownTimer() {
+        const today = new Date();
+        const difference = +new Date("2021-05-14") - +new Date();
+        const parts = {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60),
+        };
+        const remaining = Object.keys(parts)
+            .map((part) => {
+                if (!parts[part]) return;
+                return `${parts[part]} ${part}`;
+            })
+            .join(", ");
+
+
+        const display = `Time remaining until graduation: ${remaining}`
+
+        document.getElementById("countdownDisplay").innerHTML = display;
+
+
+    }
+
+    function showOrHide() {
+        var x = document.getElementById("countdownDisplay");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            document.getElementById("countdown").innerHTML = "Show Countdown";
+        } else {
+            x.style.display = "block";
+            document.getElementById("countdown").innerHTML = "Hide Countdown";
+        }
+    }
+
+    function setTimerInterval() {
+        setInterval(countdownTimer, 1000);
+    }
+
+
+
+
+</script>
+
 </body>
 </html>
