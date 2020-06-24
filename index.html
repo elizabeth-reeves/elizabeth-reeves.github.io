@@ -2,16 +2,7 @@
 <html>
 <head>
     <title>Elizabeth Reeves</title>
-    <style>
-        body { font-family: verdana;}
-        h1 { text-align: center;
-             width: 100%,
-             background-color: #A2D6FF}
-
-        p { font-family: verdana; }
-        p.countdown { font-family: verdana;
-                      display: block;}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="top">
@@ -189,26 +180,26 @@
 <br>
 <br>
 
-<style>
-.accordion {
-  background-color: #A2D6FF;
-  font-size:20px;
-<!--  color: #444;-->
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-<!--  text-align: left;-->
-  border: none;
-<!--  outline: none;-->
-<!--  transition: 0.4s;-->
-}
+<!--<style>-->
+<!--.accordion {-->
+<!--  background-color: #A2D6FF;-->
+<!--  font-size:20px;-->
+<!--&lt;!&ndash;  color: #444;&ndash;&gt;-->
+<!--  cursor: pointer;-->
+<!--  padding: 10px;-->
+<!--  width: 100%;-->
+<!--&lt;!&ndash;  text-align: left;&ndash;&gt;-->
+<!--  border: none;-->
+<!--&lt;!&ndash;  outline: none;&ndash;&gt;-->
+<!--&lt;!&ndash;  transition: 0.4s;&ndash;&gt;-->
+<!--}-->
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  display: none;
-<!--  overflow: hidden;-->
-}
-</style>
+<!--/* Style the accordion panel. Note: hidden by default */-->
+<!--.panel {-->
+<!--  display: none;-->
+<!--&lt;!&ndash;  overflow: hidden;&ndash;&gt;-->
+<!--}-->
+<!--</style>-->
 
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -232,15 +223,13 @@ for (i = 0; i < acc.length; i++) {
 
 
 </script>
-<!--<div>-->
-<!--    <p>My mom is awesome!</p>-->
-<!--</div>-->
+
 
 <button id="countdown">Show Countdown
 </button>
 <br>
 <p class="countdown" id="countdownDisplay"></p>
-<!--<br>-->
+
 
 <script>
 
@@ -250,7 +239,7 @@ for (i = 0; i < acc.length; i++) {
 
     function countdownTimer() {
         const today = new Date();
-        const difference = +new Date("2021-05-14") - +new Date();
+        const difference = +new Date("2021-05-14 16:00:00") - +new Date();
         const parts = {
             days: Math.floor(difference / (1000 * 60 * 60 * 24)),
             hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
