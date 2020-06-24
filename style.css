@@ -23,6 +23,22 @@ body { font-family: verdana;}
   transition: 0.4s;
 }
 
+#accordion2 {
+  background-color: #faa796;
+}
+
 .panel {
   display: none;
 }
+
+#countdown {
+  background-color: #ffd36e;
+  font-size:20px;
+  cursor: pointer;
+  padding: 10 px;
+  width: 100%;
+  border: none;
+  outline:none;
+  height: 45px;
+}
+
