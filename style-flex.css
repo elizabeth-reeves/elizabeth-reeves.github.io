@@ -1,0 +1,68 @@
+
+body { font-family: Optima;
+    //background-color: #FAF9F9;
+    //background-color: #F6AA1C80;
+    }
+  h1 { text-align: center;
+  width: 100%;
+  font-size: 48px}
+
+  //p { font-family: Optima; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 0;
+  margin: 50px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+
+}
+
+.flex-accordion {
+  font-family: Optima;
+  background-color: #0f8b8d;
+  //background-color: #FF9F1C;
+  font-size:36px;
+  cursor: pointer;
+  padding: 20px;
+  flex: 0.47;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  height: 200px;
+}
+
+//#7B2D26
+
+#coursework-button {
+  //background-color: #89c6be;
+  //background-color: #43AA8B;
+  //background-color: #3C6E71;
+  background-color: #ec9a29;
+}
+
+#coursework-panel {
+  //background-color: #89c6be80;
+  //background-color: #ec9a2980;
+}
+
+.flex-panel {
+  opacity: 0.0;
+  flex: 0.47;
+  background-color: #0f8b8d80;
+  margin: 0px;
+}
+
+
+
+#countdown-button {
+  background-color: #ffd36e;
+}
+
+#countdown-panel {
+  background-color: #ffd36e;
+}
+

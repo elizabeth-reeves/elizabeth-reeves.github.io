@@ -1,22 +1,20 @@
 
-body { font-family: verdana;}
+body { font-family: optima;}
   h1 { text-align: center;
   width: 100%,
-  background-color: #A2D6FF}
+  background-color: #A2D6FF;
+  font-size: 42px;}
 
-  p { font-family: verdana; }
+  p { font-family: optima; }
   p.countdown {
-    font-family: verdana;
     display: block;}
 
-
-
-
 .accordion {
+  font-family: optima;
   background-color: #A2D6FF;
-  font-size:20px;
+  font-size:26px;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   border: none;
   outline: none;
@@ -33,12 +31,10 @@ body { font-family: verdana;}
 
 #countdown {
   background-color: #ffd36e;
-  font-size:20px;
-  cursor: pointer;
-  padding: 10 px;
-  width: 100%;
-  border: none;
-  outline:none;
-  height: 45px;
+}
+
+#countdownDisplay {
+  background-color: #ffd36e80;
+  padding: 10px;
 }
 
