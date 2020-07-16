@@ -24,7 +24,7 @@ function countdownTimer() {
         .join(", ");
 
 
-    const display = `Time remaining until graduation: ${remaining}`
+    const display = `<p>Time remaining until graduation: ${remaining}</p>`
 
     document.getElementById("countdownDisplay").innerHTML = display;
 
