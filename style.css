@@ -11,7 +11,7 @@ body { font-family: optima;}
 
 .accordion {
   font-family: optima;
-  background-color: #43aa8b;
+  background-color: #458bc4;
   font-size:26px;
   cursor: pointer;
   padding: 15px;
@@ -28,19 +28,34 @@ body { font-family: optima;}
 }
 
 #coursework_button {
-  background-color: #90be6d;
+  background-color: #43aa8b;
 }
 
 #countdown {
   background-color: #f9c74f;
 }
 
+#visualization_button {
+  background-color: #90be6d;
+}
+
 #coursework_panel {
-  background-color: #90be6d80;
+  background-color: #43aa8b80;
 }
 
 #experience_panel {
-  background-color: #43aa8b80;
+  background-color: #458bc480;
+}
+
+#visualization_panel {
+  background-color: #90be6d80;
+}
+
+#sankey {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border: none;
 }
 
 #countdownDisplay {
