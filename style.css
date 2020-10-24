@@ -1,7 +1,7 @@
 
 body { font-family: optima;
-  width: 90%; font-size: 20px;
-  margin: auto}
+  width: 80%; font-size: 20px;
+  margin: auto; transition: 0.5s;}
   h1 { text-align: center;
   width: 90%,
   background-color: #A2D6FF;
