@@ -36,10 +36,10 @@ function showOrHide() {
 
     if (x.style.display === "block") {
         x.style.display = "none";
-        document.getElementById("countdown").innerHTML = "Show Countdown";
+//        document.getElementById("countdown").innerHTML = "Show Countdown";
     } else {
         x.style.display = "block";
-        document.getElementById("countdown").innerHTML = "Hide Countdown";
+//        document.getElementById("countdown").innerHTML = "Hide Countdown";
     }
 }
 
